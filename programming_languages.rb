@@ -1,9 +1,11 @@
 def reformat_languages(languages)
-  languages.map { |style|
-    style.map { |language|
-      language[:style] = style
-    }
+  oo = languages[:oo].each { |language, info| 
+    info[:style] = [:oo]
   }
+  functional = languages[:functional].each { |language, info| 
+    info[:style] = [:functional]
+  }
+  oo.merge(functional)
 end
 
 # ```ruby
