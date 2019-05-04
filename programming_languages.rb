@@ -1,5 +1,9 @@
 def reformat_languages(languages)
-  
+  languages.map { |style|
+    style.map { |language|
+      
+    }
+  }
 end
 
 ```ruby
