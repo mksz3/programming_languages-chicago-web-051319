@@ -11,6 +11,7 @@ def reformat_languages(languages)
   # }
   # oo.merge(functional)
   #########################
+  
   formatted = {}
   languages.each { |style, language|
       language.each { |name, att|
